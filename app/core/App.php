@@ -17,8 +17,6 @@ class App
             unset($url[0]);
         }
 
-        //require_once '../app/controllers/' . $this->controller . '.php';
-
         $controller = '\App\Controllers\\' . $this->controller;
 
         $this->controller = new $controller;

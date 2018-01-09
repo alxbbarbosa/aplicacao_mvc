@@ -489,3 +489,63 @@ Stack trace:
 #3 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
 #4 {main}
   thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Controller.php on line 13
+[09-Jan-2018 16:36:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Connection' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16
+[09-Jan-2018 16:58:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Connection' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16
+[09-Jan-2018 16:59:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Database\PDO' not found in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:63
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(91): App\Database\Connection::make(Array)
+#1 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#2 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#3 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 63
+[09-Jan-2018 17:00:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:63
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(63): PDO->__construct('mysql:host=loca...', 'root', '123456')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(91): App\Database\Connection::make(Array)
+#2 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#3 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#4 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 63
+[09-Jan-2018 17:01:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Database\PDO' not found in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:92
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 92
+[09-Jan-2018 17:01:49 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Database\ActiveRecord::setConnection() must be an instance of App\Database\PDO, instance of PDO given, called in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16 and defined in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:212
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\ActiveRecord::setConnection(Object(PDO))
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 212
+[09-Jan-2018 17:02:38 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\models\cliente WHERE created_at >= '2017-12-30 05:12:02'' at line 1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:183
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php(183): PDO->query('SELECT * FROM a...')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/models/Cliente.php(12): App\Database\ActiveRecord::all('created_at >= '...')
+#2 /home/alexandre/websites/www/provaDeFogo3/app/controllers/ClientesController.php(12): App\Models\Cliente->listarRecentes()
+#3 [internal function]: App\Controllers\ClientesController->index()
+#4 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(33): call_user_func_array(Array, Array)
+#5 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#6 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 183
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Notice:  Undefined variable: tableTmp in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Notice:  Undefined offset: -1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\models\cliente WHERE created_at >= '2017-12-30 05:12:07'' at line 1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:187
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php(187): PDO->query('SELECT * FROM a...')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/models/Cliente.php(12): App\Database\ActiveRecord::all('created_at >= '...')
+#2 /home/alexandre/websites/www/provaDeFogo3/app/controllers/ClientesController.php(12): App\Models\Cliente->listarRecentes()
+#3 [internal function]: App\Controllers\ClientesController->index()
+#4 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(33): call_user_func_array(Array, Array)
+#5 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#6 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 187
