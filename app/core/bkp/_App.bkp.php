@@ -35,17 +35,10 @@ class App
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    private function parseUrl()
+    public function parseUrl()
     {
         if (isset($_GET['url'])) {
-
-            foreach ($this->controllers as $uri => $callback) {
-                ;
-            }
-            
-            die(filter_var(rtrim($_GET['url'], '/')));
-            
-            //return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
+            return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
         }
     }
 
