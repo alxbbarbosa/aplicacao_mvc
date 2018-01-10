@@ -549,3 +549,8 @@ Stack trace:
 #5 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
 #6 {main}
   thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 187
+[09-Jan-2018 22:13:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16

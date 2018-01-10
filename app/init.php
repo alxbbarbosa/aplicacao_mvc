@@ -13,4 +13,4 @@ require_once 'core/Loader.php';
 
 \App\Core\Loader::register();
 
-App\Models\Model::setConnection(App\Database\Connection::getInstance('../app/config/configdb.ini'));
+App\Core\Model::setConnection(App\Database\Connection::getInstance('../app/config/configdb.ini'));

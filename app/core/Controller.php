@@ -1,7 +1,7 @@
 <?php
 namespace App\Core;
 
-use App\Models\Model;
+use App\Core\Model;
 
 class Controller
 {
@@ -14,6 +14,17 @@ class Controller
 
     public function view($view, $data = [])
     {
+        /**
+         * Gerar variáveis automaticamente
+         */
+        if (count($data) > 0) {
+            foreach ($data as $k => $v) {
+                ${$k} = $v;
+            }
+        }
+
+        $view = str_replace('.', '/', $view);
+
         require_once '../app/views/' . $view . '.php';
     }
 }

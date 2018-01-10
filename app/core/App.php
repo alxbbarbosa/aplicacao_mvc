@@ -4,6 +4,8 @@ namespace App\Core;
 class App
 {
 
+    private $uri = [];
+    private $controllers = [];
     protected $controller = 'Home';
     protected $method = 'index';
     protected $params = [];
@@ -37,6 +39,15 @@ class App
     {
         if (isset($_GET['url'])) {
             return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
+        }
+    }
+
+    public function add($uri, $callback = NULL)
+    {
+        $this->uri[] = $uri;
+
+        if ($callback != NULL) {
+            $this->controllers[$uri] = $callback;
         }
     }
 }
