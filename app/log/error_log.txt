@@ -1,0 +1,729 @@
+[09-Jan-2018 08:57:06 America/Sao_Paulo] PHP Warning:  require_once(../app/Controllers/Home.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 19
+[09-Jan-2018 08:57:06 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../app/Controllers/Home.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 19
+[09-Jan-2018 08:57:29 America/Sao_Paulo] PHP Warning:  require_once(../app/Controllers/Home.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 19
+[09-Jan-2018 08:57:29 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../app/Controllers/Home.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 19
+[09-Jan-2018 09:00:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'var_dump' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:21
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 21
+[09-Jan-2018 10:08:26 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ',' in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 25
+[09-Jan-2018 10:21:02 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:02 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:02 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:02 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:23 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:23 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:23 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:23 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:35 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:35 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:35 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:35 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:36 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:36 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:36 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:36 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 21
+[09-Jan-2018 10:21:57 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 19
+[09-Jan-2018 10:21:57 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 19
+[09-Jan-2018 10:21:57 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 19
+[09-Jan-2018 10:21:57 America/Sao_Paulo] PHP Notice:  Undefined variable: a in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 19
+[09-Jan-2018 10:31:38 America/Sao_Paulo] PHP Warning:  include(../controllers/Home.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 4
+[09-Jan-2018 10:31:38 America/Sao_Paulo] PHP Warning:  include(): Failed opening '../controllers/Home.php' for inclusion (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 4
+[09-Jan-2018 10:31:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[09-Jan-2018 10:38:39 America/Sao_Paulo] PHP Warning:  include_once(./Teste.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 3
+[09-Jan-2018 10:38:39 America/Sao_Paulo] PHP Warning:  include_once(): Failed opening './Teste.php' for inclusion (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 3
+[09-Jan-2018 10:38:39 America/Sao_Paulo] PHP Notice:  Undefined variable: key in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 10:38:39 America/Sao_Paulo] PHP Notice:  Undefined index:  in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 10:38:58 America/Sao_Paulo] PHP Notice:  Undefined variable: key in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 10:38:58 America/Sao_Paulo] PHP Notice:  Undefined index:  in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 10:48:08 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:48:25 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:49:10 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:49:17 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:49:59 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:50:10 America/Sao_Paulo] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Teste' not found or invalid function name in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 10:58:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'a' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:28
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(23): Route->submit()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App->__construct()
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 11:01:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'a' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:28
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(23): Route->submit()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App->__construct()
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 28
+[09-Jan-2018 11:05:24 America/Sao_Paulo] PHP Warning:  array_key_exists() expects parameter 2 to be array, string given in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 11:05:46 America/Sao_Paulo] PHP Warning:  key_exists() expects parameter 2 to be array, string given in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 26
+[09-Jan-2018 13:57:10 America/Sao_Paulo] PHP Warning:  require_once(./core/Loader.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:57:11 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required './core/Loader.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:58:06 America/Sao_Paulo] PHP Warning:  require_once(./App/core/Loader.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:58:06 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required './App/core/Loader.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:58:16 America/Sao_Paulo] PHP Warning:  require_once(./app/core/Loader.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:58:16 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required './app/core/Loader.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 7
+[09-Jan-2018 13:58:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Loader' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:9
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 9
+[09-Jan-2018 13:59:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Loader' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:9
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 9
+[09-Jan-2018 14:00:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Loader' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:10
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 10
+[09-Jan-2018 14:00:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:01:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:03:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:03:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:04:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:04:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:05:05 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:05:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:05:42 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:06:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:06:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:07:37 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:07:41 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:07:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:08:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:09:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:09:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:10:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:10:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:11:01 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:11:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:22:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:29:18 America/Sao_Paulo] PHP Notice:  Undefined variable: class in /home/alexandre/websites/www/provaDeFogo3/app/core/Loader.php on line 27
+[09-Jan-2018 14:36:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:38:44 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:39:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:45:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:45:47 America/Sao_Paulo] PHP Fatal error:  Class 'App\Controllers\Controller' not found in /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php on line 4
+[09-Jan-2018 14:47:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/alexandre/websites/www/provaDeFogo3/app/core/Loader.php on line 45
+[09-Jan-2018 14:47:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:47:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:48:19 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:48:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:48:21 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:48:33 America/Sao_Paulo] PHP Notice:  Undefined variable: class in /home/alexandre/websites/www/provaDeFogo3/app/core/Loader.php on line 27
+[09-Jan-2018 14:49:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:50:05 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:50:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:51:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:51:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 14:51:40 America/Sao_Paulo] PHP Notice:  Undefined variable: class in /home/alexandre/websites/www/provaDeFogo3/app/core/Loader.php on line 27
+[09-Jan-2018 14:53:17 America/Sao_Paulo] PHP Fatal error:  Class 'App\Controllers\Controller' not found in /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php on line 4
+[09-Jan-2018 14:53:45 America/Sao_Paulo] PHP Fatal error:  Class 'App\Controllers\Controller' not found in /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php on line 4
+[09-Jan-2018 14:54:24 America/Sao_Paulo] PHP Fatal error:  Class 'App\Controllers\Controller' not found in /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php on line 4
+[09-Jan-2018 14:54:30 America/Sao_Paulo] PHP Fatal error:  Class 'App\Controllers\Controller' not found in /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php on line 4
+[09-Jan-2018 14:55:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:23
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 23
+[09-Jan-2018 14:57:29 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:25
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 25
+[09-Jan-2018 15:00:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:25
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 25
+[09-Jan-2018 15:01:43 America/Sao_Paulo] PHP Warning:  require_once(../app/controllers/App\Controllers\Home.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 23
+[09-Jan-2018 15:01:43 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/App\Controllers\Home.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 23
+[09-Jan-2018 15:02:36 America/Sao_Paulo] PHP Warning:  require_once(../app/controllers/\App\Controllers\Home.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 23
+[09-Jan-2018 15:02:36 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/\App\Controllers\Home.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 23
+[09-Jan-2018 15:03:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:25
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 25
+[09-Jan-2018 15:04:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:25
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 25
+[09-Jan-2018 15:16:40 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 4
+[09-Jan-2018 15:17:45 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:17:47 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:18:43 America/Sao_Paulo] PHP Fatal error:  Class 'Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:19:44 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:23:27 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:23:29 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:23:38 America/Sao_Paulo] PHP Fatal error:  Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/models/User.php on line 6
+[09-Jan-2018 15:24:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 26
+[09-Jan-2018 15:28:05 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 26
+[09-Jan-2018 15:28:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 26
+[09-Jan-2018 15:28:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:28:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:29:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:29:05 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:29:41 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:29:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 26
+[09-Jan-2018 15:46:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:48:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:50:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:50:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:51:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:51:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:52:29 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 15:53:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Undefined constant 'App\Core\Loader' in /home/alexandre/websites/www/provaDeFogo3/app/init.php:14
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 14
+[09-Jan-2018 15:54:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 15:56:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:57:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:57:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:58:29 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:59:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:59:29 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 15:59:39 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:00:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:01:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:02:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:02:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:03:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:03:59 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\Home' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:24
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 24
+[09-Jan-2018 16:04:42 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:05:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:05:40 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:05:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:06:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:06:46 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:07:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:07:37 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:08:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:12:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:12:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:13:00 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\App' not found in /home/alexandre/websites/www/provaDeFogo3/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 5
+[09-Jan-2018 16:14:49 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'User' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/Controller.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php(11): App\Core\Controller->model('User')
+#1 [internal function]: App\Controllers\Home->index()
+#2 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(35): call_user_func_array(Array, Array)
+#3 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#4 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Controller.php on line 13
+[09-Jan-2018 16:15:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'User' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/Controller.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/controllers/Home.php(11): App\Core\Controller->model('User')
+#1 [internal function]: App\Controllers\Home->index()
+#2 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(35): call_user_func_array(Array, Array)
+#3 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#4 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Controller.php on line 13
+[09-Jan-2018 16:36:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Connection' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16
+[09-Jan-2018 16:58:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Connection' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16
+[09-Jan-2018 16:59:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Database\PDO' not found in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:63
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(91): App\Database\Connection::make(Array)
+#1 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#2 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#3 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 63
+[09-Jan-2018 17:00:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:63
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(63): PDO->__construct('mysql:host=loca...', 'root', '123456')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php(91): App\Database\Connection::make(Array)
+#2 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#3 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#4 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 63
+[09-Jan-2018 17:01:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Database\PDO' not found in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php:92
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\Connection::getInstance('../app/config/c...')
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/Connection.php on line 92
+[09-Jan-2018 17:01:49 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Database\ActiveRecord::setConnection() must be an instance of App\Database\PDO, instance of PDO given, called in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16 and defined in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:212
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(16): App\Database\ActiveRecord::setConnection(Object(PDO))
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 212
+[09-Jan-2018 17:02:38 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\models\cliente WHERE created_at >= '2017-12-30 05:12:02'' at line 1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:183
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php(183): PDO->query('SELECT * FROM a...')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/models/Cliente.php(12): App\Database\ActiveRecord::all('created_at >= '...')
+#2 /home/alexandre/websites/www/provaDeFogo3/app/controllers/ClientesController.php(12): App\Models\Cliente->listarRecentes()
+#3 [internal function]: App\Controllers\ClientesController->index()
+#4 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(33): call_user_func_array(Array, Array)
+#5 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#6 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 183
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Notice:  Undefined variable: tableTmp in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Notice:  Undefined offset: -1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 178
+[09-Jan-2018 17:07:20 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\models\cliente WHERE created_at >= '2017-12-30 05:12:07'' at line 1 in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php:187
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php(187): PDO->query('SELECT * FROM a...')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/models/Cliente.php(12): App\Database\ActiveRecord::all('created_at >= '...')
+#2 /home/alexandre/websites/www/provaDeFogo3/app/controllers/ClientesController.php(12): App\Models\Cliente->listarRecentes()
+#3 [internal function]: App\Controllers\ClientesController->index()
+#4 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(33): call_user_func_array(Array, Array)
+#5 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#6 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/database/ActiveRecord.php on line 187
+[09-Jan-2018 22:13:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Models\Model' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 16
+[09-Jan-2018 22:38:45 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 19
+[09-Jan-2018 22:40:11 America/Sao_Paulo] PHP Notice:  Undefined variable: url in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 34
+[09-Jan-2018 22:47:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method App\Core\App::add() in /home/alexandre/websites/www/provaDeFogo3/public/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/public/index.php on line 7
+[09-Jan-2018 23:12:40 America/Sao_Paulo] PHP Notice:  Undefined index: url in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 43
+[09-Jan-2018 23:31:08 America/Sao_Paulo] PHP Notice:  Undefined variable: verv in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[09-Jan-2018 23:46:59 America/Sao_Paulo] PHP Notice:  Undefined variable: subject in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 45
+[09-Jan-2018 23:46:59 America/Sao_Paulo] PHP Notice:  Undefined variable: subject in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 45
+[09-Jan-2018 23:46:59 America/Sao_Paulo] PHP Notice:  Undefined variable: subject in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 45
+[10-Jan-2018 00:08:58 America/Sao_Paulo] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 83
+[10-Jan-2018 00:08:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:09:31 America/Sao_Paulo] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 83
+[10-Jan-2018 00:09:31 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:09:57 America/Sao_Paulo] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 83
+[10-Jan-2018 00:09:57 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:10:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:11:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:12:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:12:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:13:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:13:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:14:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:14:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:15:19 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php:46
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(25): App\Core\Route->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 46
+[10-Jan-2018 00:19:34 America/Sao_Paulo] PHP Warning:  implode(): Invalid arguments passed in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 78
+[10-Jan-2018 00:19:34 America/Sao_Paulo] PHP Warning:  implode(): Invalid arguments passed in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 78
+[10-Jan-2018 00:19:34 America/Sao_Paulo] PHP Warning:  implode(): Invalid arguments passed in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 78
+[10-Jan-2018 00:25:08 America/Sao_Paulo] PHP Notice:  Undefined variable: uri in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 81
+[10-Jan-2018 00:39:11 America/Sao_Paulo] PHP Notice:  Undefined variable: url in /home/alexandre/websites/www/provaDeFogo3/app/core/Route.php on line 95
+[10-Jan-2018 01:10:52 America/Sao_Paulo] PHP Warning:  require_once(./routes/Routes.php): failed to open stream: No such file or directory in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 21
+[10-Jan-2018 01:10:52 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required './routes/Routes.php' (include_path='.:/usr/share/php') in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 21
+[10-Jan-2018 01:12:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Router' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:18
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 18
+[10-Jan-2018 01:13:13 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Core\App::setRouter() must be an instance of App\Core\Route, instance of App\Core\Router given, called in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 22 and defined in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(22): App\Core\App::setRouter(Object(App\Core\Router))
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 16
+[10-Jan-2018 01:24:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Facades\Route' not found in /home/alexandre/websites/www/provaDeFogo3/app/init.php:18
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 18
+[10-Jan-2018 01:25:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php:2
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(21): require_once()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php on line 2
+[10-Jan-2018 01:26:08 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Core\App::setRouter() must be an instance of App\Core\Router, null given, called in /home/alexandre/websites/www/provaDeFogo3/app/init.php on line 23 and defined in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:16
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(23): App\Core\App::setRouter(NULL)
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 16
+[10-Jan-2018 01:26:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function call() on null in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[10-Jan-2018 01:29:40 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function call() on null in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[10-Jan-2018 01:29:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function call() on null in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[10-Jan-2018 01:29:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function call() on null in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[10-Jan-2018 01:29:57 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function call() on null in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php:13
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#1 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/App.php on line 13
+[10-Jan-2018 01:32:23 America/Sao_Paulo] PHP Deprecated:  Non-static method App\Facades\Route::get() should not be called statically in /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php on line 3
+[10-Jan-2018 01:32:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to private method App\Core\Router::add() from context 'App\Facades\Route' in /home/alexandre/websites/www/provaDeFogo3/app/facades/Route.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php(3): App\Facades\Route::get('/Home/phone/{id...', 'Home@index')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/init.php(21): require_once('/home/alexandre...')
+#2 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#3 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/facades/Route.php on line 26
+[10-Jan-2018 01:32:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to private method App\Core\Router::add() from context 'App\Facades\Route' in /home/alexandre/websites/www/provaDeFogo3/app/facades/Route.php:26
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php(3): App\Facades\Route::get('/Home/phone/{id...', 'Home@index')
+#1 /home/alexandre/websites/www/provaDeFogo3/app/init.php(21): require_once('/home/alexandre...')
+#2 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#3 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/facades/Route.php on line 26
+[10-Jan-2018 01:33:47 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method App\Core\Router::get() in /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php:4
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/init.php(21): require_once()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(3): require_once('/home/alexandre...')
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/routes/Routes.php on line 4
+[10-Jan-2018 01:45:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Exception' not found in /home/alexandre/websites/www/provaDeFogo3/app/core/Router.php:107
+Stack trace:
+#0 /home/alexandre/websites/www/provaDeFogo3/app/core/App.php(13): App\Core\Router->call()
+#1 /home/alexandre/websites/www/provaDeFogo3/public/index.php(5): App\Core\App->__construct()
+#2 {main}
+  thrown in /home/alexandre/websites/www/provaDeFogo3/app/core/Router.php on line 107

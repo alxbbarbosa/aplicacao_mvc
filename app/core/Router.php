@@ -1,119 +1,71 @@
 <?php
 namespace App\Core;
 
+use Exception;
+use App\Core\Route;
+use App\Core\RouteCollection;
+use App\Core\Dispatcher;
+use App\Core\Request;
+
 class Router
 {
 
-    private $uri = [];
-    private $controller;
-    private $action;
-    private $params = [];
+    private static $collection;
 
-    public function add($verb, $uri, $callback = NULL)
+    public function __construct()
     {
-        $uri = filter_var(rtrim($uri), FILTER_SANITIZE_URL);
+        $request = new Request();
 
-        $this->uri[] = [$verb, $uri, $callback];
+        $this->dispatch($request->getMethod(), $request->getUri());
     }
 
-    private function parseUrl()
+    public static function setCollection(RouteCollection $collection)
     {
-        return (isset($_GET['url'])) ? explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL)) : '/';
+        self::$collection = $collection;
     }
 
-    public function call()
+    /**
+     * Obtém uma rota conforme se informar o método e a URI
+     * @param type $method
+     * @param type $uri
+     * @return type Route
+     */
+    private function getRoute($method, $uri)
     {
-        $uri = $this->parseUrl();
+        return Router::$collection->get($method, $uri);
+    }
 
-        foreach ($this->uri as $uriSaved) {
+    /**
+     * Verificar se possui parâmetros, obter
+     * @param Route $route
+     * @param type $url
+     * @return type array
+     */
+    public function getParams(Route $route, $url)
+    {
+        if ($route->hasParam()) {
 
-            if ($uriSaved[0] === $_SERVER['REQUEST_METHOD']) {
-                // Url salva nas rotas será divida e trabalhada
-                $uW = (strlen($uriSaved[1]) > 1) ? explode('/', trim($uriSaved[1], '/')) : '404';
-                foreach ($uW as $v) {
-                    $f_[] = $v;
-                    if (preg_match("/^\{[a-zA-Z_]+\}$/", $v)) {
-                        $v_[] = $v;
-                        $p_[] = "[a-zA-Z0-9]";
-                    } else {
-                        $u_[] = $v;
-                    }
-                }
+            $start = $route->getUriWithoutParams();
 
-                // Url - completa
-                if (isset($f_)) {
-                    $f = implode('/', $f_);
-                }
-
-                // Url - primeira parte
-                if (isset($u_)) {
-                    $u = implode('/', $u_);
-                }
-
-                // Url - parte com variáveis
-                if (isset($v_)) {
-                    $v = implode('/', $v_);
-                }
-
-                // Padrão
-                if (isset($p_)) {
-                    $p = implode('/', $p_);
-                }
-
-                // Combinação do padrão
-                $pattern = "#^{$u}\/{$p}$#";
-
-                if (preg_match($pattern, implode('/', $uri))) {
-
-                    if (!is_null($uriSaved[2])) {
-
-                        if (is_string($uriSaved[2])) {
-                            $c = explode('@', $uriSaved[2]);
-
-                            // Se o controller existe
-                            if (file_exists('../app/controllers/' . $c[0] . '.php')) {
-                                $this->controller = $c[0];
-                            }
-
-                            $controller = '\App\Controllers\\' . $this->controller;
-                            $this->controller = new $controller;
-
-                            // Verificar se o método existe
-                            if (isset($c[1])) {
-                                if (method_exists($this->controller, $c[1])) {
-                                    $this->action = $c[1];
-                                }
-                            }
-
-                            // Se foi recebido alguma variável, informar
-                            if (isset($v_) && count($v_) > 0) {
-                                // Capturar apenas a parte das variáveis
-                                for ($i = count($u_); $i < count($f_); $i++) {
-                                    $params[] = $uri[$i];
-                                }
-                            }
-
-                            $this->params = $params ? array_values($params) : [];
-
-                            call_user_func_array([$this->controller, $this->action], $this->params);
-                            return TRUE;
-                        } else if (is_callable($uriSaved[2])) {
-
-                            call_user_func($uriSaved[2]);
-                            return TRUE;
-                        }
-
-                        throw new Exception('Lançado um exceção :: Tipo desconhecido foi configurado nas rotas');
-                    } else {
-                        throw new Exception('Lançado um exceção :: Nenhum controller encontrado');
-                    }
-                } else {
-                    throw new Exception('Lançado um exceção :: Nenhuma rota encontrada');
-                }
-            } else {
-                throw new Exception('Lançado um exceção :: Nenhuma rota definida com o verbo solicitado');
-            }
+            return explode('/', substr($url, count($start) - 1, count($url)));
         }
-        return FALSE;
+    }
+
+    /**
+     * Despachar conforme URL informada
+     * @param type $method
+     * @param type $uri
+     */
+    private function dispatch($method, $uri)
+    {
+        $dispatcher = new Dispatcher();
+
+        $route = $this->getRoute($method, $uri);
+
+        $dispatcher->setController($route->getController());
+        $dispatcher->setAction($route->getAction());
+        $dispatcher->setParams($this->getParams($route, $url));
+
+        $dispatcher->dispatch();
     }
 }
