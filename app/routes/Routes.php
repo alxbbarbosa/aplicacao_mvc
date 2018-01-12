@@ -26,3 +26,7 @@ Route::get('/contatos/listar', 'ContatosController@listar');
 Route::get('/contatos/novo', 'ContatosController@novo');
 
 Route::post('contatos/salvar', 'ContatosController@salvar');
+
+Route::get('contatos/editar/{id}', 'ContatosController@editar');
+
+Route::get('contatos/{id}/excluir', 'ContatosController@excluir');

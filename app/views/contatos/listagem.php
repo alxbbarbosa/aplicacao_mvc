@@ -3,8 +3,6 @@
     <head>
         <title>Agenda de contatos</title>
         <meta charset="utf-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
         <script src="../assets/js/bootstrap.js" type="text/javascript" ></script>
@@ -24,7 +22,7 @@
                             <td>Email</td>
                             <td>Telefone</td>
                             <td>Celular</td>
-                            <td><button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Adicionar</button></td>
+                            <td><a class="btn btn-primary" href="novo"><span class="glyphicon glyphicon-plus"></span> Adicionar</a></td>
                             <td><button class="btn btn-default"><span class="glyphicon glyphicon-log-out"></span> Voltar</button></td>
                         </tr>
                     </thead>
@@ -37,8 +35,8 @@
                                 <td><?php echo $contato->email; ?></td>
                                 <td><?php echo $contato->telefone; ?></td>
                                 <td><?php echo $contato->celular; ?></td>
-                                <td><a href="?class=contatoControl&method=atualizar&id=<?php echo $contato->id; ?>" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Alterar</a></td>
-                                <td><a href="?class=contatoControl&method=excluir&id=<?php echo $contato->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+                                <td><a href="editar/<?php echo $contato->id; ?>" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Alterar</a></td>
+                                <td><a href="<?php echo $contato->id; ?>/excluir" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
                             </tr>
                         <?php } ?>
                     </tbody>

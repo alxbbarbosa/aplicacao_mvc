@@ -14,6 +14,7 @@ class Controller
 
     public function view($view, $data = [])
     {
+        ob_start();
         /**
          * Gerar variáveis automaticamente
          */
@@ -26,5 +27,6 @@ class Controller
         $view = str_replace('.', '/', $view);
 
         require_once '../app/views/' . $view . '.php';
+        ob_end_flush();
     }
 }

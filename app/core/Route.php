@@ -92,7 +92,7 @@ class Route
      */
     public function match(string $method, string $uri)
     {
-        //echo '<br>match de Route recebeu: ' . $method . ' - ' . $uri;
+        //echo '<br>match de Route recebeu: ' . $method . ' - ' . $uri . ' Deve casar com: ' . $this->uriPattern;
         $method = strtoupper($method);
         return ($this->method === $method && preg_match($this->uriPattern, $uri));
     }

@@ -18,8 +18,13 @@ class Request
         $match = array();
         preg_match("#\/[a-zA-Z0-9_]+\/public\/#", $uri, $match);
         $size = strlen($match[0]);
-        $newUri = substr($uri, $size, strlen($uri));
-        $this->uri = (strlen($newUri) > 1) ? $newUri : '/';
+        
+        if ($size > 0) {
+            $newUri = substr($uri, $size, strlen($uri));
+            $this->uri = (strlen($newUri) > 1) ? $newUri : '/';
+        } else {
+            $this->uri = $uri;
+        }
 
         $this->method = $_SERVER['REQUEST_METHOD'];
 
@@ -28,16 +33,9 @@ class Request
                 $this->elements = $_POST;
                 break;
             case 'GET':
-                //$this->uri = $this->getUriFromGet();
                 $this->elements = $this->parseUrl();
                 break;
         }
-        //echo '<br>Request gerou a URI: ' . $this->uri . '<br />';
-    }
-
-    private function getUriFromGet()
-    {
-        return (isset($_GET['url'])) ? $_GET['url'] : '/';
     }
 
     private function parseUrl()
@@ -62,6 +60,6 @@ class Request
 
     public function __get($name)
     {
-        return (isset($this->$name)) ? $this->$name : '';
+        return (isset($this->elements[$name])) ? $this->elements[$name] : NULL;
     }
 }

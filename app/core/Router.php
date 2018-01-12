@@ -6,16 +6,21 @@ use App\Core\Route;
 use App\Core\RouteCollection;
 use App\Core\Dispatcher;
 use App\Core\Request;
+use \ReflectionMethod;
 
 class Router
 {
+
+    private $request;
 
     /**
      * Cria um objeto Request e despacha utilizando um dispatcher
      */
     public function __construct(Request $request)
     {
-        $this->dispatch($request->getMethod(), $request->getUri());
+        $this->request = $request;
+
+        $this->dispatch();
     }
 
     /**
@@ -24,12 +29,10 @@ class Router
      * @param type $uri
      * @return type Route
      */
-    private function getRoute($method, $uri)
+    private function getRoute()
     {
-        //echo '<br />Em getRoute: ' . $method . ' - ' . $uri . '<br />';
+        $route = RouteCollection::get($this->request->getMethod(), $this->request->getUri());
 
-        $route = RouteCollection::get($method, $uri);
-        
         if (!is_null($route)) {
             return $route;
         } else {
@@ -43,13 +46,41 @@ class Router
      * @param type $url
      * @return type array
      */
-    public function getParams(Route $route, $url)
+    public function getParams(Route $route)
     {
         if ($route->hasParam()) {
 
+            $uri = $this->request->getUri();
+
             $start = $route->getUriWithoutParams();
 
-            return explode('/', substr($url, count($start) - 1, count($url)));
+            return explode('/', substr($uri, strlen($start) + 1, strlen($uri) + 1));
+        }
+    }
+
+    private function getParamsAction($controller)
+    {
+        $class = '\App\Controllers\\' . $controller;
+        $obj = new $class;
+        $rs = new ReflectionMethod($obj, 'salvar');
+        $params = $rs->getParameters();
+
+        if (count($params) > 0) {
+            foreach ($params as $param) {
+                if (method_exists($param->getClass(), 'getName')) {
+                    $array[] = [$param->name => $param->getClass()->getName()];
+                } else {
+                    $array[] = [$param->name => ''];
+                }
+            }
+            return $array;
+        }
+    }
+
+    private function getParamRequest(array $params)
+    {
+        foreach ($params as $param) {
+            return array_search('App\Core\Request', $param);
         }
     }
 
@@ -58,13 +89,13 @@ class Router
      * @param type $method
      * @param type $uri
      */
-    private function dispatch($method, $uri)
+    private function dispatch()
     {
         //echo 'Em dispatch: ' . $method .' - '. $uri;
         /**
          * Obtém a rota para despachar
          */
-        $route = $this->getRoute($method, $uri);
+        $route = $this->getRoute();
 
         /**
          * Instanciar um Dispatcher
@@ -76,8 +107,28 @@ class Router
             $dispatcher->setController($route->getController());
             $dispatcher->setAction($route->getAction());
 
-            if ($route->hasParam()) {
-                $dispatcher->setParams($this->getParams($route, $uri));
+            switch ($route->getMethod()) {
+                case 'GET':
+                    if ($route->hasParam()) {
+                        $dispatcher->setParams($this->getParams($route));
+                    }
+                    break;
+                case 'POST':
+
+                    $paramsAction = $this->getParamsAction($route->getController());
+
+                    if (count($paramsAction) == 1) {
+                        $pRequest = $this->getParamRequest($paramsAction);
+                        if ($pRequest) {
+                            $dispatcher->setParams([$this->request]);
+                        } else {
+                            throw New Exception('Parâmetro na Action precisa ser Request');
+                        }
+                    } else {
+                        throw New Exception('Método POST precisa receber apenas um parâmetro');
+                    }
+
+                    break;
             }
         } else {
             throw new Exception('Não foi encontrado um controller para rota definida');

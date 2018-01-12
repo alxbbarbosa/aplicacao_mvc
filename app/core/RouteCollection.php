@@ -40,10 +40,11 @@ class RouteCollection
     public static function get(string $method, string $uri)
     {
         //echo '<br>get de RouteCollection recebeu: ' . $method . ' - ' . $uri;
-
+        
         foreach (self::$routes as $route) {
 
             if ($route->match($method, $uri)) {
+                
                 return $route;
             }
         }
