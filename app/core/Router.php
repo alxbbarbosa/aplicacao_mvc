@@ -10,29 +10,31 @@ use App\Core\Request;
 class Router
 {
 
-    private static $collection;
-
-    public function __construct()
+    /**
+     * Cria um objeto Request e despacha utilizando um dispatcher
+     */
+    public function __construct(Request $request)
     {
-        $request = new Request();
-
         $this->dispatch($request->getMethod(), $request->getUri());
     }
 
-    public static function setCollection(RouteCollection $collection)
-    {
-        self::$collection = $collection;
-    }
-
     /**
-     * Obtém uma rota conforme se informar o método e a URI
+     * Obtém uma Route na Collection com base no método e a URI informada
      * @param type $method
      * @param type $uri
      * @return type Route
      */
     private function getRoute($method, $uri)
     {
-        return Router::$collection->get($method, $uri);
+        //echo '<br />Em getRoute: ' . $method . ' - ' . $uri . '<br />';
+
+        $route = RouteCollection::get($method, $uri);
+        
+        if (!is_null($route)) {
+            return $route;
+        } else {
+            throw new Exception('Não foi encontrado uma rota definida para esta Uri');
+        }
     }
 
     /**
@@ -58,14 +60,31 @@ class Router
      */
     private function dispatch($method, $uri)
     {
-        $dispatcher = new Dispatcher();
-
+        //echo 'Em dispatch: ' . $method .' - '. $uri;
+        /**
+         * Obtém a rota para despachar
+         */
         $route = $this->getRoute($method, $uri);
 
-        $dispatcher->setController($route->getController());
-        $dispatcher->setAction($route->getAction());
-        $dispatcher->setParams($this->getParams($route, $url));
+        /**
+         * Instanciar um Dispatcher
+         */
+        $dispatcher = new Dispatcher();
 
-        $dispatcher->dispatch();
+        if ($route->hasController()) {
+
+            $dispatcher->setController($route->getController());
+            $dispatcher->setAction($route->getAction());
+
+            if ($route->hasParam()) {
+                $dispatcher->setParams($this->getParams($route, $uri));
+            }
+        } else {
+            throw new Exception('Não foi encontrado um controller para rota definida');
+        }
+
+
+        // Dispatcher retornará True ou false
+        return $dispatcher->dispatch();
     }
 }

@@ -9,7 +9,7 @@ namespace App\Core;
 class Dispatcher
 {
 
-    private $controller;
+    private $controller = 'home';
     private $action = 'index';
     private $params = [];
 

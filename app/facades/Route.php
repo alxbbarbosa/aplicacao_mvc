@@ -2,32 +2,23 @@
 namespace App\Facades;
 
 use App\Core\Router;
+use App\Core\RouteCollection;
 
 class Route
 {
-
-    private static $router;
 
     private function __construct()
     {
         
     }
 
-    public static function getRouter()
+    public static function get($uri, $handler)
     {
-        if (is_null(self::$router)) {
-            self::$router = new Router();
-        }
-        return self::$router;
+        RouteCollection::add('GET', $uri, $handler);
     }
 
-    public static function get($uri, $callback)
+    public static function post($uri, $handler)
     {
-        self::getRouter()->add('GET', $uri, $callback);
-    }
-
-    public static function post($uri, $callback)
-    {
-        self::getRouter()->add('POST', $uri, $callback);
+        RouteCollection::add('POST', $uri, $handler);
     }
 }

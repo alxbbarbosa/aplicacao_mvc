@@ -13,7 +13,7 @@
         <div class="container">
             <h1>Agenda de Contatos - MVC</h1>
             <hr>
-            <form method="post" class="form-horizontal">
+            <form method="post" action="salvar" class="form-horizontal">
                 <div class="panel panel-default" style="margin: 40px;">
                     <div class="panel-heading">
                         <span class="panel-title"><?php echo (isset($id)) ? 'Atualizando cadastro do contato: ' . $nome : 'Cadastrar novo contato'; ?></span>

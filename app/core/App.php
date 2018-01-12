@@ -2,19 +2,20 @@
 namespace App\Core;
 
 use App\Core\Router;
+use App\Core\Request;
 
 class App
 {
 
-    private static $router;
+    private $request;
 
     public function __construct()
     {
-        App::$router->call();
+        $this->request = new Request();
     }
 
-    public static function setRouter($router)
+    public function routing()
     {
-        self::$router = $router;
+        return new Router($this->request);
     }
 }
