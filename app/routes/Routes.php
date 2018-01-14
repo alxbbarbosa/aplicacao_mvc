@@ -10,23 +10,18 @@ use App\Facades\Route;
 
 Route::get('/', function() {
 
-    echo '<pre>';
-    var_dump($_SERVER);
-    echo '</pre>';
-
-    $pattern = "#\/[a-zA-Z0-9_]+\/public\/#";
-    //$matches = array();
-    preg_match($pattern, "/provaDeFogo3/public/teste/", $matches);
-
-    var_dump($matches);
+    $this->goPage('/contatos/listar');
+    
 });
 
 Route::get('/contatos/listar', 'ContatosController@listar');
 
 Route::get('/contatos/novo', 'ContatosController@novo');
 
-Route::post('contatos/salvar', 'ContatosController@salvar');
+Route::get('/contatos/{id}', 'ContatosController@editar');
 
-Route::get('contatos/editar/{id}', 'ContatosController@editar');
+Route::get('/contatos/{id}/confirmar', 'ContatosController@confirmarExcluir');
 
-Route::get('contatos/{id}/excluir', 'ContatosController@excluir');
+Route::get('/contatos/{id}/excluir', 'ContatosController@excluir');
+
+Route::post('/contatos/salvar', 'ContatosController@salvar');

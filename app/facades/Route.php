@@ -1,8 +1,8 @@
 <?php
 namespace App\Facades;
 
-use App\Core\Router;
-use App\Core\RouteCollection;
+use App\Routing\Router;
+use App\Routing\RouteCollection;
 
 class Route
 {
@@ -14,11 +14,21 @@ class Route
 
     public static function get($uri, $handler)
     {
-        RouteCollection::add('GET', $uri, $handler);
+        try {
+            RouteCollection::add('GET', $uri, $handler);
+        } catch (Exception $e) {
+            $c = new SystemController();
+            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
+        }
     }
 
     public static function post($uri, $handler)
     {
-        RouteCollection::add('POST', $uri, $handler);
+        try {
+            RouteCollection::add('POST', $uri, $handler);
+        } catch (Exception $e) {
+            $c = new SystemController();
+            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
+        }
     }
 }

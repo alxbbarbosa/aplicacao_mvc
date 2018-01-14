@@ -1,3 +1,8 @@
+<?php
+
+use App\Facades\Tools;
+
+?>
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -35,8 +40,8 @@
                                 <td><?php echo $contato->email; ?></td>
                                 <td><?php echo $contato->telefone; ?></td>
                                 <td><?php echo $contato->celular; ?></td>
-                                <td><a href="editar/<?php echo $contato->id; ?>" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Alterar</a></td>
-                                <td><a href="<?php echo $contato->id; ?>/excluir" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+                                <td><a href="<?php echo Tools::site_url("contatos/{$contato->id}"); ?>" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Alterar</a></td>
+                                <td><a href="<?php echo Tools::site_url("contatos/{$contato->id}/confirmar"); ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
                             </tr>
                         <?php } ?>
                     </tbody>

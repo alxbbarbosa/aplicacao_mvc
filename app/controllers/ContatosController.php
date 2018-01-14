@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
-use App\Core\Request;
+use App\Routing\Request;
 
 class ContatosController extends Controller
 {
@@ -13,7 +13,7 @@ class ContatosController extends Controller
         $contato = $this->model('Contato');
         $contato->salvar($request);
 
-        $this->listar();
+        $this->goPage('contatos/listar');
     }
 
     public function novo()
@@ -28,6 +28,7 @@ class ContatosController extends Controller
         $contato = $contato->carregar($id);
 
         $this->view('contatos.formulario', [
+            'id' => $contato->id,
             'nome' => $contato->nome,
             'sobrenome' => $contato->sobrenome,
             'email' => $contato->email,
@@ -41,5 +42,26 @@ class ContatosController extends Controller
         $contatos = \App\Models\Contato::all();
 
         $this->view('contatos.listagem', ['contatos' => $contatos]);
+    }
+
+    public function confirmarExcluir($id)
+    {
+        $contato = $this->model('Contato');
+
+        $c = $contato->carregar($id);
+
+        $this->view('contatos.confirmar', ['id' => $c->id, 'nome' => $c->nome]);
+    }
+
+    public function excluir($id)
+    {
+
+        $contato = $this->model('Contato');
+
+        $c = $contato->carregar($id);
+
+        $c->delete();
+
+        $this->goPage('contatos/listar');
     }
 }

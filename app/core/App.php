@@ -1,8 +1,8 @@
 <?php
 namespace App\Core;
 
-use App\Core\Router;
-use App\Core\Request;
+use App\Routing\Router;
+use App\Routing\Request;
 
 class App
 {

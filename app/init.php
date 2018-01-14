@@ -11,6 +11,7 @@ require_once 'core/Loader.php';
 // Registrar Namespaces
 \App\Core\Loader::add('App\Core', '../app/core');
 \App\Core\Loader::add('App\Controllers', '../app/controllers');
+\App\Core\Loader::add('App\Routing', '../app/routing');
 \App\Core\Loader::add('App\Models', '../app/models');
 \App\Core\Loader::add('App\Database', '../app/database');
 \App\Core\Loader::add('App\Facade', '../app/facade');
@@ -18,8 +19,12 @@ require_once 'core/Loader.php';
 // Registrar classes
 \App\Core\Loader::register();
 
+try {
 // Setar a conexão com o Banco de dados no Model
-App\Core\Model::setConnection(App\Database\Connection::getInstance('../app/config/configdb.ini'));
-
+    App\Core\Model::setConnection(App\Database\Connection::getInstance('../app/config/configdb.ini'));
+} catch (Exception $e) {
+    $c = new \App\Core\SystemController();
+    $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
+}
 // Carregar as rotas em Collection
 require_once 'routes/Routes.php';

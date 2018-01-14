@@ -1,3 +1,8 @@
+<?php
+
+use App\Facades\Tools;
+
+?>
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -11,7 +16,7 @@
         <div class="container">
             <h1>Agenda de Contatos - MVC</h1>
             <hr>
-            <form method="post" action="salvar" class="form-horizontal">
+            <form method="post" action="<?php echo Tools::site_url("contatos/salvar"); ?>" class="form-horizontal">
                 <div class="panel panel-default" style="margin: 40px;">
                     <div class="panel-heading">
                         <span class="panel-title"><?php echo (isset($id)) ? 'Atualizando cadastro do contato: ' . $nome : 'Cadastrar novo contato'; ?></span>
@@ -58,12 +63,11 @@
                     <div class="panel-footer">
                         <div class="col-sm-offset-2">
                             <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</button>
-                            <button name="cancelar" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                            <button type="reset" name="cancelar" class="btn btn-info" onclick="javascrip:history.go(-1)"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
                         </div>
                     </div>
                 </div>
             </form>
-
         </div>
     </body>
 </html>
