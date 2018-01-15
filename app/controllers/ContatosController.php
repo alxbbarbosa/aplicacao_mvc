@@ -44,6 +44,11 @@ class ContatosController extends Controller
         $this->view('contatos.listagem', ['contatos' => $contatos]);
     }
 
+    public function formbusca()
+    {
+        $this->view('contatos.formulario', ['localizar' => TRUE]);
+    }
+
     public function confirmarExcluir($id)
     {
         $contato = $this->model('Contato');

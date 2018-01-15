@@ -9,7 +9,6 @@ use App\Routing\Request;
 use App\Core\SystemController;
 use \ReflectionMethod;
 
-
 class Router
 {
 
@@ -38,7 +37,9 @@ class Router
         if (!is_null($route)) {
             return $route;
         } else {
-            throw new Exception('Não foi encontrado uma rota definida para esta Uri');
+            $c = new SystemController();
+            $c->index();
+            //throw new Exception('Não foi encontrado uma rota definida para esta Uri');
         }
     }
 
@@ -144,9 +145,9 @@ class Router
             // Dispatcher retornará True ou false
             return $dispatcher->dispatch();
         } catch (Exception $e) {
-            
+
             $c = new SystemController();
-            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine() , $e->getFile() ,$e->getTraceAsString());
+            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
         }
     }
 }

@@ -15,7 +15,7 @@ class Route
     public static function get($uri, $handler)
     {
         try {
-            RouteCollection::add('GET', $uri, $handler);
+            return RouteCollection::add('GET', $uri, $handler);
         } catch (Exception $e) {
             $c = new SystemController();
             $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
@@ -25,7 +25,7 @@ class Route
     public static function post($uri, $handler)
     {
         try {
-            RouteCollection::add('POST', $uri, $handler);
+            return RouteCollection::add('POST', $uri, $handler);
         } catch (Exception $e) {
             $c = new SystemController();
             $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());

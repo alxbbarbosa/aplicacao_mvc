@@ -8,8 +8,8 @@ use App\Facades\Tools;
         <title>Agenda de contatos</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../../../public/assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
-        <script src="../../../public/assets/js/bootstrap.js" type="text/javascript" ></script>
+        <link href="<?php echo Tools::site_url(); ?>assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+        <script src="<?php echo Tools::site_url(); ?>assets/js/bootstrap.js" type="text/javascript" ></script>
     </head>
     <body>
         <div class="container">

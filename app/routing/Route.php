@@ -1,13 +1,16 @@
 <?php
 namespace App\Routing;
 
-use App\Routing\RouteController;
+use Exception;
 use App\Facades\Tools;
+use App\Core\SystemController;
+use App\Routing\RouteController;
 
 class Route
 {
 
     private $uri;
+    private $userUri;
     private $uriArray;
     private $uriPattern;
     private $uriWithoutParams;
@@ -16,6 +19,7 @@ class Route
     private $action;
     private $params = [];
     private $callback;
+    private $tipos = [];
 
     public function __construct(string $method, string $uri, $handler)
     {
@@ -28,11 +32,44 @@ class Route
             throw new Exception('Erro: tentativa de criar uma rota com um método inválido.');
         }
 
-        $this->parseUri($uri);
+        try {
+            $this->parseUri($uri);
+            $this->parseParams($uri);
+            $this->parseController($handler);
+        } catch (Exception $e) {
+            $c = new SystemController();
+            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
+            exit();
+        }
+    }
 
-        $this->parseParams($uri);
+    public function define(array $tipos)
+    {
+        foreach ($tipos as $key => $value) {
+            if (is_string($key)) {
+                if (preg_match("/^(int|string|bool)$/", $value)) {
 
-        $this->parseController($handler);
+                    switch ($value) {
+                        case 'int':
+                            $pattern = "[0-9]{1,}";
+                            break;
+                        case 'string':
+                            $pattern = "[a-zA-Z0-9]{1,}";
+                            break;
+                        case 'bool':
+                            $pattern = "(TRUE|FALSE|true|false|0|1)";
+                            break;
+                        default :
+                            throw new Exception("Tipo informado para variável <u>{$value}</u> da URI não é válido.");
+                    }
+                    $this->parseParams($this->userUri, $pattern, $key);
+                } else {
+                    throw new Exception('Tipo de variável é inválido');
+                }
+            } else {
+                throw new Exception('Nome de variável é inválido');
+            }
+        }
     }
 
     public function hasParam()
@@ -152,21 +189,29 @@ class Route
      * @param type $pattern
      * @return void
      */
-    private function parseParams($uri, $pattern = "[a-zA-Z0-9]{1,}")
+    private function parseParams($uri, $pattern = NULL, $var = NULL)
     {
+        $this->userUri = $uri;
         if ($uri !== '/') {
             if (count($this->uriArray) > 1) {
                 $index = 0;
                 foreach ($this->uriArray as $v) {
                     /* \verificar se recebeu algum campo como {id} */
                     if (preg_match("/^\{[a-zA-Z_]+\}$/", $v)) {
+                        $paramName = str_replace('{', '', str_replace('}', '', $v));
+                        if (!is_null($var) && $var === $paramName) {
+                            $this->params[] = ['param' => $var, 'pattern' => $pattern];
+                        } else {
+                            $pattern = "[a-zA-Z0-9]{1,}";
+                            $this->params[] = ['param' => $paramName, 'pattern' => $pattern];
+                        }
                         $fp_[$index] = $pattern;
-                        $this->params[] = ['param' => str_replace('{', '', str_replace('}', '', $v)), 'pattern' => $pattern];
                     } else {
                         $fp_[$index] = $v;
                     }
                     $index++;
                 }
+
                 $fp = isset($fp_) ? implode('/', $fp_) : NULL;
                 $fp = Tools::site_url($fp);
                 $this->uriPattern = str_replace('/', '\/', "#^{$fp}$#");

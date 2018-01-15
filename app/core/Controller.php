@@ -2,6 +2,7 @@
 namespace App\Core;
 
 use App\Core\Model;
+use App\Core\View;
 
 class Controller
 {
@@ -27,19 +28,12 @@ class Controller
 
     public function view($view, $data = [])
     {
-        ob_start();
-        /**
-         * Gerar variáveis automaticamente
-         */
-        if (count($data) > 0) {
-            foreach ($data as $k => $v) {
-                ${$k} = $v;
-            }
+        try {
+            $viewer = new View();
+            $viewer->render($view, $data);
+        } catch (Exception $e) {
+            $c = new SystemController();
+            $c->catchException($e->getCode(), $e->getMessage(), $e->getLine(), $e->getFile(), $e->getTraceAsString());
         }
-
-        $view = str_replace('.', '/', $view);
-
-        require_once '../app/views/' . $view . '.php';
-        ob_end_flush();
     }
 }

@@ -24,6 +24,15 @@ class RouteCollection
 
         if (preg_match("/^(GET|POST|PUT|DELETE)$/", $method)) {
             self::$routes[] = new Route($method, $uri, $handler);
+
+            // Permitir que uma ação seja executada sobre a última rota inserida
+            $totalIndexed = count(self::$routes);
+            $index = 0;
+            foreach (self::$routes as $key => $route) {
+                if (++$index === $totalIndexed) {
+                    return self::$routes[$key];
+                }
+            }
         } else {
             throw new Exception('Erro: tentativa de adicionar uma rota com um método inválido.');
         }
@@ -40,11 +49,11 @@ class RouteCollection
     public static function get(string $method, string $uri)
     {
         //echo '<br>get de RouteCollection recebeu: ' . $method . ' - ' . $uri;
-        
+
         foreach (self::$routes as $route) {
 
             if ($route->match($method, $uri)) {
-                
+
                 return $route;
             }
         }

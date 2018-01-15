@@ -9,6 +9,7 @@ class SystemController extends Controller
     public function index()
     {
         $this->view('system.404');
+        exit();
     }
 
     public function catchException($code, $message, $line, $file, $tracer)
