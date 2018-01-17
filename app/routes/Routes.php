@@ -1,6 +1,6 @@
 <?php
 
-use App\Facades\Route;
+use \Framework\Facades\Route;
 
 /**
  * Definição das Rotas

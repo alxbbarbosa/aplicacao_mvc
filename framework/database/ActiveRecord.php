@@ -1,5 +1,5 @@
 <?php
-namespace App\Database;
+namespace Framework\Database;
 
 abstract class ActiveRecord
 {

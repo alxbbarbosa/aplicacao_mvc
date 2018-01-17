@@ -1,8 +1,11 @@
 <?php
-namespace App\Routing;
+namespace Framework\Routing;
 
-use App\Routing\Route;
+use Framework\Routing\Route;
 
+/**
+ * Classe RouteCollection: Armazena Rotas encapsuladas como objetos Route.
+ */
 class RouteCollection
 {
 
@@ -39,17 +42,15 @@ class RouteCollection
     }
 
     /**
-     * Obter uma Route. Precisa de uma Uri para casar com uma das Routes
+     * Obter uma Route.  Precisa  de uma Uri para casar com uma das Routes
      * Utilizará o método match da Route para encontrar a route apropriada
      * 
      * @param type $method
      * @param type $uri
      * @return type Route
      */
-    public static function get(string $method, string $uri)
+    public static function get(string $method, string $uri): ?Route
     {
-        //echo '<br>get de RouteCollection recebeu: ' . $method . ' - ' . $uri;
-
         foreach (self::$routes as $route) {
 
             if ($route->match($method, $uri)) {
@@ -57,6 +58,6 @@ class RouteCollection
                 return $route;
             }
         }
-        return;
+        return NULL;
     }
 }

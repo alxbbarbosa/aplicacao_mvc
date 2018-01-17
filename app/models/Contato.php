@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 
-use App\Core\Model;
+use Framework\Core\Model;
 
 class Contato extends Model
 {

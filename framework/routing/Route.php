@@ -1,11 +1,18 @@
 <?php
-namespace App\Routing;
+namespace Framework\Routing;
 
 use Exception;
-use App\Facades\Tools;
-use App\Core\SystemController;
-use App\Routing\RouteController;
+use Framework\Facades\Tools;
+use Framework\Core\SystemController;
+use Framework\Routing\RouteController;
 
+/**
+ * Classe Route: Encapsula uma rota contendo a Uri como padrão informado pelo
+ * usuário, o Controller e a Action. Além disso, irá capturar  os  parâmetros
+ * conforme o padrão definido pelo usuário.
+ * 
+ * @author Alexandre Bezerra Barbosa
+ */
 class Route
 {
 
@@ -131,7 +138,7 @@ class Route
      * Verificar se uma rota informada casa com o modelo padrão
      * @param type $method - Ex: GET, POST
      * @param type $uri
-     * @return type
+     * @return type bool / Exception
      */
     public function match(string $method, string $uri)
     {

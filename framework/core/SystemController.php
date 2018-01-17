@@ -1,7 +1,7 @@
 <?php
-namespace App\Core;
+namespace Framework\Core;
 
-use App\Core\Controller;
+use Framework\Core\Controller;
 
 class SystemController extends Controller
 {

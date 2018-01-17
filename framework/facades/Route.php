@@ -1,8 +1,8 @@
 <?php
-namespace App\Facades;
+namespace Framework\Facades;
 
-use App\Routing\Router;
-use App\Routing\RouteCollection;
+use Framework\Routing\Router;
+use Framework\Routing\RouteCollection;
 
 class Route
 {

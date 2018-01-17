@@ -1,5 +1,5 @@
 <?php
-namespace App\Core;
+namespace Framework\Core;
 
 class Loader
 {

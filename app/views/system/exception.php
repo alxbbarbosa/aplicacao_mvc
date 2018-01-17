@@ -1,6 +1,6 @@
 <?php
 
-use App\Facades\Tools;
+use Framework\Facades\Tools;
 
 ?>
 <html>

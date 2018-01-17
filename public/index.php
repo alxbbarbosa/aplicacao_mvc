@@ -1,10 +1,10 @@
 <?php
 
 // Inicializar
-require_once '../app/init.php';
+require_once '../framework/init.php';
 
 // Instanciar App
-$app = new \App\Core\App;
+$app = new \Framework\Core\App;
 
 // Rotear
 $app->routing();

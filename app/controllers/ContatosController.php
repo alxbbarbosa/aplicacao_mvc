@@ -1,8 +1,8 @@
 <?php
 namespace App\Controllers;
 
-use App\Core\Controller;
-use App\Routing\Request;
+use Framework\Core\Controller;
+use Framework\Routing\Request;
 
 class ContatosController extends Controller
 {

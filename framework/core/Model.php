@@ -1,7 +1,7 @@
 <?php
-namespace App\Core;
+namespace Framework\Core;
 
-use App\Database\ActiveRecord;
+use Framework\Database\ActiveRecord;
 
 class Model extends ActiveRecord
 {

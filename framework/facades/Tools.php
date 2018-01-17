@@ -1,5 +1,5 @@
 <?php
-namespace App\Facades;
+namespace Framework\Facades;
 
 /**
  * Description of Tools

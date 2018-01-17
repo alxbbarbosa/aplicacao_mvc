@@ -1,7 +1,8 @@
 <?php
-namespace App\Core;
+namespace Framework\Core;
 
 use Exception;
+use Framework\Facades\Tools;
 
 class View
 {
@@ -16,7 +17,6 @@ class View
         if (!file_exists($filename)) {
             throw new Exception("A view não pode ser renderizada. Arquivo <u>{$filename}</u> não encontrado.");
         }
-
         ob_start();
         /**
          * Gerar variáveis automaticamente
@@ -26,7 +26,6 @@ class View
                 ${$k} = $v;
             }
         }
-
         require_once $filename;
         ob_end_flush();
     }
